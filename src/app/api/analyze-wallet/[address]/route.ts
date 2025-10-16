@@ -85,7 +85,7 @@ export async function GET(
       analysisTimestamp: new Date().toISOString(),
     });
   } catch (error) {
-    console.error('Error saat memanggil Alchemy API:', error);
+    // console.error('Error saat memanggil Alchemy API:', error);
     return NextResponse.json(
       { error: 'Gagal mengambil data dari Base Mainnet.' },
       { status: 500 }
