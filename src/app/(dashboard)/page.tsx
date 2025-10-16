@@ -63,7 +63,7 @@ export default function WalletAnalyzer() {
 
             setAnalysisResult(data);
         } catch (err) {
-            console.error(err);
+            // console.error(err);
             setError(err.message);
         } finally {
             setLoading(false);
